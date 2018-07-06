@@ -5,7 +5,9 @@
 
 <style>
 
-body {margin:25px;}
+body {
+	margin:25px;
+}
 
 img {
 	display: block;
@@ -18,12 +20,17 @@ img {
 div.card {
 	text-align: center;
 	margin: auto;
-	width: 20%;
-	/*max-width:28em*/
-	padding:1rem
+	width: 30em;
+	padding-bottom: 1em;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 8px;
+}
+
+@media (max-width: 30em) {
+    div.card {
+        width: 100%;
+    }
 }
 
 </style>
