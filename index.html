@@ -20,9 +20,9 @@ div.card {
 }
 
 @media (max-width: 30em) {
-    div.card {
-        width: 100%;
-    }
+		div.card {
+				width: 100%;
+		}
 }
 
 img {
@@ -41,6 +41,19 @@ h1 {
 	font-size: 200%;
 }
 
+th {
+  text-align: right;
+}
+
+td {
+	text-align: left;
+}
+
+table.contact_info {
+	align: center;
+	padding-left: 5em;
+}
+
 </style>
 
 </head>
@@ -49,8 +62,16 @@ h1 {
 <div class="card">
 	<img src="me.jpg" alt="That's me!">
 	<h1>Carsten Walther</h1>
-	<p>Mail: <a href="mailto:mail@carstenwalther.io">mail@carstenwalther.io</a></p>
-	<p>Github: <a href="https://github.com/CarstenWalther">CarstenWalther</a></p>
+	<table class="contact_info">
+		<tr>
+			<th>Mail:</th>
+			<td><a href="mailto:mail@carstenwalther.io">mail@carstenwalther.io</a></td>
+		</tr>
+		<tr>
+			<th>Github:</th>
+			<td><a href="https://github.com/CarstenWalther">CarstenWalther</a></td>
+		</tr>
+	</table>
 </div>
 </body>
 </html>
